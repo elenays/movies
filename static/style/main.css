@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__caption {
+    font: 28px Ubuntu;
+}
+
+.enter-movie {
+    width: 35%;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 5px;
+    margin: 30px 0;
+}
+
+.find-movie {
+    width: 10%;
+    height: 30px;
+    border: 2px solid #000;
+    background-color: transparent;
+    font: 18px Ubuntu;
+    color: #000;
+    cursor: pointer;
+}
+
