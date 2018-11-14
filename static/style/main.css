@@ -32,7 +32,7 @@ body,p {
     cursor: pointer;
 }
 
-.itemEntry {
+.movie__show {
     display: flex;
     padding: 20px 50px;
 }
@@ -57,3 +57,9 @@ body,p {
     background-color: #c9c9c9;
 }
 
+.movie__none {
+    font: 18px Ubuntu;
+    color: #000;
+    text-align: center;
+    width: 100%;
+}
