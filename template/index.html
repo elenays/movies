@@ -10,12 +10,36 @@
 </head>
 <body>
 <div class="main">
-    <h1 class="main__caption">Найдется любой фильм!</h1>
-    <input type="text" class="enter-movie" value="" placeholder="Введите название фильма">
-    <input type="submit" class="find-movie" value="Найти" onclick="showMovies()">
+    <h1 class="main__caption">Find your movie!</h1>
+    <input type="text" class="enter-movie" value="" placeholder="Enter movie">
+    <input type="submit" class="find-movie" value="Search" onclick="getMovies()">
 </div>
 
-<div class="movie"></div>
+<div class="itemEntry"></div>
+
+
+<script id="movie" type="text/x-handlebars-template">
+
+    <div class="movie__img">
+        <img src="{{Poster}}" >
+    </div>
+
+    <div id="myData" class="movie">
+        <p class="movie__text"> Title : {{Title}} </p>
+        <div class="movie__line"></div>
+        <p class="movie__text"> Year: {{Year}} </p>
+        <div class="movie__line"></div>
+        <p class="movie__text"> Genre : {{Genre}} </p>
+        <div class="movie__line"></div>
+        <p class="movie__text"> Director : {{Director}} </p>
+        <div class="movie__line"></div>
+        <p class="movie__text"> Writer : {{Writer}} </p>
+        <div class="movie__line"></div>
+        <p class="movie__text"> Runtime : {{Runtime}} </p>
+    </div>
+
+</script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
